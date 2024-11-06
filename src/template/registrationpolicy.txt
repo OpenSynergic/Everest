@@ -1,0 +1,77 @@
+<div class="register-status-everest">
+    <p><strong>Conference Registration Policy</strong></p>
+    <ol>
+        <li>
+            <p><strong>Registration Confirmation</strong></p>
+            <ul>
+                <li>Registration is confirmed only upon receipt of full payment.</li>
+                <li>An email confirmation will be sent to the registered email address once payment is processed.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Payment</strong></p>
+            <ul>
+                <li>All registration fees must be paid in full before attending the conference.</li>
+                <li>Payments can be made via credit card, bank transfer, or PayPal.</li>
+                <li>Any transaction fees are the responsibility of the registrant.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Cancellation & Refunds</strong></p>
+            <ul>
+                <li>Cancellations must be made in writing via email to <a href="mailto:email@example.com">email@example.com</a>.</li>
+                <li>Cancellations received before [Cancellation Deadline Date] will be eligible for a [Percentage]% refund, minus a processing fee of $[Amount].</li>
+                <li>No refunds will be issued for cancellations received after [Cancellation Deadline Date].</li>
+                <li>No refunds will be issued for no-shows.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Substitution Policy</strong></p>
+            <ul>
+                <li>If you are unable to attend, a substitute from your organization may attend in your place at no additional charge.</li>
+                <li>Substitution requests must be made in writing to <a href="mailto:email@example.com">email@example.com</a> prior to the conference start date.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Early Bird and Discounted Registrations</strong></p>
+            <ul>
+                <li>Early bird and other discounted rates must be paid by the specified deadline to qualify for the discount.</li>
+                <li>Registrants who miss the payment deadline will be charged the regular registration fee.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>On-Site Registration</strong></p>
+            <ul>
+                <li>On-site registration will be available subject to space and resource availability.</li>
+                <li>On-site registrants may not receive conference materials and benefits that pre-registered participants receive.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Special Requirements</strong></p>
+            <ul>
+                <li>Please inform us of any special dietary requirements, accessibility needs, or other accommodations at the time of registration.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Privacy Policy</strong></p>
+            <ul>
+                <li>The personal information provided during registration will be used only for conference-related purposes.</li>
+                <li>Your contact details may be shared with sponsors unless you opt out during registration.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Changes to the Event</strong></p>
+            <ul>
+                <li>The organizers reserve the right to modify the conference program, venue, or speakers if necessary.</li>
+                <li>Any significant changes will be communicated to registered participants in a timely manner.</li>
+            </ul>
+        </li>
+        <li>
+            <p><strong>Liability</strong></p>
+            <ul>
+                <li>The conference organizers are not responsible for any personal injury, loss, or damage to property during the event.</li>
+                <li>Participants are encouraged to arrange their own insurance coverage.</li>
+            </ul>
+        </li>
+    </ol>
+</div>

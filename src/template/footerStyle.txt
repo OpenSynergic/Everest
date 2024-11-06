@@ -1,0 +1,35 @@
+<div class="footer-container">
+    <div class="footer-content">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>Address</h4>
+                <address>
+                    <p>501,507 Your Company Address</p>
+                    <p>400015 Maharashtra, UK</p>
+                </address>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Support Team</p>
+                <a href="mailto:support@leconfe.com">support@leconfe.com</a>
+            </div>
+            <div class="footer-section">
+                <h4>Our social media</h4>
+                <div class="social-icons">
+                    <img src="/storage/tinyeditor/yLuxUpoSxvIBJOCEWqoUwudvDurHn2XIRWyhD3z7.png" alt="Social Media Icon 1" />
+                    <img src="/storage/tinyeditor/6UxtXwlZ7rjv9haF0Lkp4SbI6JjYTHYp8LUOOlcR.png" alt="Social Media Icon 2" />
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p><strong>Copyright &copy; 2024 International Conference on Innovative Agriculture</strong>. All rights reserved.</p>
+            <p>This is an open-access article distributed under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</p>
+            <p>Licensed under 
+                <a href="https://creativecommons.org/licenses/by/4.0/">
+                    <img src="https://licensebuttons.net/l/by/4.0/80x15.png" alt="Creative Commons License" />
+                </a>
+                a <a href="https://creativecommons.org/licenses/by/4.0/" class="font-bold">Creative Commons Attribution 4.0 International License</a>
+            </p>
+        </div>
+    </div>
+</div>

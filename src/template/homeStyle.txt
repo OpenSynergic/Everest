@@ -1,0 +1,162 @@
+
+
+<div class="section-1">
+    <div class="content-container">
+        <div class="text-content">
+            <h1>Don't miss your chance to learn from top experts in AI and network with peers - FutureLearn AI Conference 2024</h1>
+            <p>The <strong>FutureLearn AI Conference</strong> is a premier event dedicated to artificial intelligence that offers attendees three days of immersive learning and dynamic networking.</p>
+            <p>Taking place in the vibrant city of <strong>London, United Kingdom</strong>, the FutureLearn AI Conference also provides the option to attend virtually. Whether due to travel restrictions or other reasons that prevent you from making your way to this iconic city, you can participate in the event and present your research paper from anywhere in the world.</p>
+            <p>You will be impressed by the program curated by our scientific committee &ndash; leading experts from world-class institutions. This international conference on AI will address the most pressing topics in the field, from innovative applications to the ethical implications of AI technologies.</p>
+            <p>With participants joining from around the globe, the FutureLearn AI Conference 2024 is guaranteed to inspire, connect, and help shape the future of artificial intelligence both nationally and internationally.</p>
+        </div>
+        <div class="image-content">
+            <img src="/leconfe/storage/tinyeditor/sgczl9ctC1BGT6l1pSfIqCKdIe7fTcSuu6mfFC3X.jpg" alt="FutureLearn AI Conference Image" />
+        </div>
+    </div>
+</div>
+
+<div class="section-4">
+    <h1><strong>FutureLearn AI Conference 2024</strong></h1>
+    <h2><strong>Important Dates Before the Conference</strong></h2>
+    <div class="section-4card-container">
+        <div class="section-4-card">
+            <img class="card-icon" src="/leconfe/storage/tinyeditor/Rym8psoqX2uUThKNHvZJxhoxgTXrPiB2nDeWWlaP.png" alt="Icon 1" />
+            <h2 class="section-4-card-title">October 04, 2024</h2>
+            <p class="section-4-card-content">Abstract submission</p>
+        </div>
+        <div class="section-4-card">
+            <img class="card-icon" src="/leconfe/storage/tinyeditor/Rym8psoqX2uUThKNHvZJxhoxgTXrPiB2nDeWWlaP.png" alt="Icon 2" />
+            <h2 class="section-4-card-title">September 30, 2024</h2>
+            <p class="section-4-card-content">Submission of full papers</p>
+        </div>
+        <div class="section-4-card">
+            <img class="card-icon" src="/leconfe/storage/tinyeditor/Rym8psoqX2uUThKNHvZJxhoxgTXrPiB2nDeWWlaP.png" alt="Icon 3" />
+            <h2 class="section-4-card-title">September 15 - October 10, 2024</h2>
+            <p class="section-4-card-content">Review process</p>
+        </div>
+        <div class="section-4-card">
+            <img class="card-icon" src="/leconfe/storage/tinyeditor/Rym8psoqX2uUThKNHvZJxhoxgTXrPiB2nDeWWlaP.png" alt="Icon 4" />
+            <h2 class="section-4-card-title">October 09, 2024</h2>
+            <p class="section-4-card-content">Submission of final full papers</p>
+        </div>
+    </div>
+    <a href="Here Link" class="more-details-btn not-prose">More Details</a>
+</div>
+
+<div class="section-2 not-prose">
+    <div class="content-container">
+        <div class="image-content2">
+            <img src="/leconfe/storage/tinyeditor/1cZvKGxpQxH6kTRqgiihmOQxJartl2iwCDBkdSuo.jpg" alt="Conference Image" />
+        </div>
+        <div class="text-content">
+            <p class="section-2-title">Don't miss your chance to learn from top experts in AI and network with peers - FutureLearn AI Conference 2024</p class>
+            <p>The <strong>FutureLearn AI Conference</strong> is a premier event dedicated to artificial intelligence that offers attendees three days of immersive learning and dynamic networking.</p>
+            <p>Taking place in the vibrant city of <strong>London, United Kingdom</strong>, the FutureLearn AI Conference also provides the option to attend virtually. Whether due to travel restrictions or other reasons that prevent you from making your way to this iconic city, you can participate in the event and present your research paper from anywhere in the world.</p>
+            <p>You will be impressed by the program curated by our scientific committee &ndash; leading experts from world-class institutions. This international conference on AI will address the most pressing topics in the field, from innovative applications to the ethical implications of AI technologies.</p>
+            <p>With participants joining from around the globe, the FutureLearn AI Conference 2024 is guaranteed to inspire, connect, and help shape the future of artificial intelligence both nationally and internationally.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section-3 not-prose">
+    <h1 class="title">Plagiarism Policy &amp; Publication Ethics</h1>
+    <div class="content-wrapper">
+        <div class="image-content3">
+            <img class="prose" src="/leconfe/storage/tinyeditor/X3QnFjjFlV3ssUPdLV8fkxcQ96pSnQa9NLvVmlJA.webp" alt="Conference Image" />
+        </div>
+        <div class="text-content">
+            <p>The FutureLearn AI Conference 2024 follows strict anti-plagiarism policies and checks every submission for plagiarism using Crossref Similarity Check Powered by iThenticate. All articles submitted to the conference first undergo a plagiarism check before being sent to our scientific committee for review. The submission will be automatically rejected at any time if found plagiarized. If you’d like to find out more information about the iThenticate software, click on the following link: <a href="https://www.crossref.org/services/similarity-check/" target="_blank" rel="noopener">Crossref Similarity Check</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="section-5 not-prose">
+    <h1 class="section-5-title">Keynote Speaker</h1>
+    <div class="section-5-content-container">
+        <div class="section-5-text-content">
+            <h2 class="topic-title">Topic: The Future of AI: Innovations, Ethics, and Challenges</h2>
+            <p>Dr. John Doe is a leading researcher in artificial intelligence and machine learning. He is the Director of the AI Research Institute and has published extensively on AI ethics and applications in various industries. His work aims to bridge the gap between technological advancement and ethical responsibility in AI.</p>
+            <p>Dr. Doe received his PhD in Computer Science from MIT and has held positions at several prestigious universities. He has been an advocate for responsible AI development and frequently speaks at international conferences.</p>
+            <p>In addition to his research, Dr. Doe is involved in several initiatives to promote diversity and inclusion in STEM fields, aiming to inspire the next generation of innovators.</p>
+        </div>
+        <div class="section-5-image-content">
+            <img src="/leconfe/storage/tinyeditor/SBnaEKnkjQPaJfeHap8eUZA2iq3Nw3zZi14IEIdT.jpg" alt="Dr. John Doe" />
+            <h1>Dr. John Doe</h1>
+            <p>Director of the AI Research Institute</p>
+        </div>
+    </div>
+</div>
+
+<section class="latest-news">
+    <div class="section-header">
+        <h2>Latest News</h2>
+    </div>
+    
+    <div class="news-container">
+        <!-- News Card 1 -->
+        <article class="news-card">
+            <div class="news-image-container">
+                <img src="london-hidden-gems.jpg" alt="London Hidden Gems" class="news-image">
+            </div>
+            <div class="news-content">
+                <span class="location-tag">London</span>
+                <a href="#" class="news-title">London Hidden Gems</a>
+                <p class="news-description">
+                    Discover the secret spots and lesser-known attractions in London that most tourists miss. 
+                    From hidden gardens to secret passages, explore the city's hidden treasures.
+                </p>
+                <div class="news-meta">
+                    <span class="news-date">
+                        <i class="fas fa-calendar"></i>
+                        January 13, 2021
+                    </span>
+                    
+                </div>
+            </div>
+        </article>
+
+        <!-- News Card 2 -->
+        <article class="news-card">
+            <div class="news-image-container">
+                <img src="london-attraction.jpg" alt="London Attraction Places" class="news-image">
+            </div>
+            <div class="news-content">
+                <span class="location-tag">London</span>
+                <a href="#" class="news-title">London Attraction Places</a>
+                <p class="news-description">
+                    Experience the most iconic attractions London has to offer. From the Tower Bridge 
+                    to Buckingham Palace, immerse yourself in the city's rich history and culture.
+                </p>
+                <div class="news-meta">
+                    <span class="news-date">
+                        <i class="fas fa-calendar"></i>
+                        January 13, 2021
+                    </span>
+                    
+                </div>
+            </div>
+        </article>
+
+        <!-- News Card 3 -->
+        <article class="news-card">
+            <div class="news-image-container">
+                <img src="dining-london.jpg" alt="Dining in London" class="news-image">
+            </div>
+            <div class="news-content">
+                <span class="location-tag">London</span>
+                <a href="#" class="news-title">Dining in London</a>
+                <p class="news-description">
+                    Explore London's diverse culinary scene, from Michelin-starred restaurants to 
+                    charming local cafes. Find the best spots for authentic British cuisine and international delights.
+                </p>
+                <div class="news-meta">
+                    <span class="news-date">
+                        <i class="fas fa-calendar"></i>
+                        January 13, 2021
+                    </span>
+                    
+                </div>
+            </div>
+        </article>
+    </div>
+</section>

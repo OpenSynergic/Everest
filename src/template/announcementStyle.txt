@@ -1,0 +1,36 @@
+<div class="section-announcement">
+    <p>
+        We are proud to announce the FutureLearn AI Conference 2024, to be held in Bali, Indonesia, from 15-17 October 2024. This inaugural event is dedicated to bringing together a group of academics, researchers, educators, and professionals from around the world to explore innovative themes and trends in open access journal publishing.
+      </p>
+      
+      <div class="highlight-box">
+        <p><strong>Conference Details:</strong></p>
+        <ul>
+            <li><strong>Event Name:</strong> FutureLearn AI Conference 2024</li>
+            <li><strong>Date:</strong> 15-17 October 2024</li>
+            <li><strong>Venue:</strong> Bali International Convention Center, Bali, Indonesia</li>
+            <li><strong>Organized by:</strong> Open Journal Network</li>
+        </ul>
+       </div>
+      
+      <p><strong>Invitation to Submit Papers:</strong></p>
+      <p>
+        We invite submissions of original research papers, case studies, and review articles related to the conference theme. All accepted papers will be published in the conference proceedings. Submission guidelines and deadlines will be announced soon on the official conference website.
+      </p>
+      
+      <p><strong>Registration:</strong></p>
+      <p>
+        Early registration will open on 1 October 2024. Please visit <a href="https://www.leconfe.org" target="_blank">www.leconfe.org</a> for more information on registration fees and deadlines.
+      </p>
+      
+      <p><strong>Contact Information:</strong></p>
+      <ul>
+        <li>Email: <a href="mailto:contact@leconfe.org">contact@leconfe.org</a></li>
+        <li>Phone: +62 361 123456</li>
+        <li>Website: <a href="https://www.leconfe2024.org" target="_blank">www.leconfe2024.org</a></li>
+      </ul>
+      
+      <p>
+        Join us at Leconfe to be part of a transformative experience that fosters knowledge sharing, collaboration, and innovation in the world of open journal publishing. We look forward to welcoming you to this exciting event!
+      </p>
+</div>  
