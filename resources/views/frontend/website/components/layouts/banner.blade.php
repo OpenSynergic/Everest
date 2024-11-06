@@ -37,8 +37,13 @@
                                 </div>
                             </div>
                         @endif
-                    @else
-                        <p class="col-span-2">No images uploaded.</p>
+                        @else
+                       
+                        <div class="rounded-lg overflow-hidden shadow-sm bg-gradient-to-r from-gray-300 to-gray-400 w-full sm:w-[752px] sm:h-[286.17px] aspect-[752/286.17] flex items-center justify-center">
+                            <span class="text-gray-500 text-xl">Default Image</span>
+                        </div>
+                        
+
                     @endif
                 </div>
             </div>
