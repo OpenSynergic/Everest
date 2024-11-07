@@ -3,7 +3,6 @@
     <x-everest::layouts.banner></x-everest::layouts.banner>
 
     <div class="space-y-8">
-        <x-scheduledConference::alert-scheduled-conference :scheduled-conference="$currentScheduledConference" />
 
         <section class="container mx-auto px-4 py-8">
             <div class="flex flex-col lg:flex-row gap-8 items-start">
