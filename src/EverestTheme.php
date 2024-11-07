@@ -23,7 +23,6 @@ class EverestTheme extends Theme
 	public function boot()
 	{
 		Blade::anonymousComponentPath($this->getPluginPath('resources/views/frontend/website/components'), 'everest');
-		Blade::anonymousComponentPath($this->getPluginPath('resources/views/frontend/scheduledConference/components'), 'scheduledConference');
 	}
 	
 	public function getFormSchema() : array 
