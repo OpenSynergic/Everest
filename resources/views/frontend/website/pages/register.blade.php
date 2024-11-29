@@ -11,7 +11,7 @@
             </div>
 
             @if (!$registerComplete)
-                @if (Setting::get('allow_registration'))
+                @if ($allowRegistration)
                     <form wire:submit='register' class="space-y-6">
                         @error('throttle')
                             <div class="p-3 bg-red-50 text-red-700 text-sm rounded border border-red-100">
@@ -98,7 +98,7 @@
                             </div>
 
                             <!-- Conference Roles -->
-                            @if (isset($scheduledConference) && $scheduledConference)
+                            @if (isset($scheduledConference) && $scheduledConference && !empty($roles))
                             <div class="sm:col-span-6">
                                 <label class="block text-sm font-medium text-gray-700 mb-3 ">
                                     {{ __('general.register_as') }} <span class="text-red-500">*</span>
