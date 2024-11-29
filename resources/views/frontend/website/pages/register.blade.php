@@ -65,6 +65,17 @@
                                     <div class="mt-1 text-sm text-red-600">{{ $message }}</div>
                                 @enderror
                             </div>
+                            
+                            <div class="sm:col-span-6">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">
+                                    {{ __('general.phone') }}</span>
+                                </label>
+                                <input type="tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-primary-200 focus:border-primary-400" wire:model="phone" />
+                                @error('phone')
+                                <div class="mt-1 text-sm text-red-600">{{ $message }}</div>
+                                @enderror
+                                <p class="text-xs text-gray-500 mt-2">{{ __('general.phone_format_international') }}</p>
+                            </div>
 
                             <!-- Account Information -->
                             <div class="sm:col-span-6">
