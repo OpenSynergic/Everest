@@ -76,7 +76,7 @@
                                                             @endif
                                                             @if($speaker->getMeta('scopus_url'))
                                                                 <a href="{{ $speaker->getMeta('scopus_url') }}" target="_blank">
-                                                                    <x-academicon-scopus class="w-6 h-6 text-[#0F4C75]" />
+                                                                    <x-academicon-scopus class="w-6 h-6 text-[#e9711c]" />
                                                                 </a>
                                                             @endif
                                                         </div>
