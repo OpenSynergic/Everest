@@ -25,7 +25,7 @@
                                 {{ new Illuminate\Support\HtmlString($layout['data']['about']) }}
                             </div>
                         @endforeach
-                    
+
                     @endif
                 </div>
 
@@ -48,23 +48,44 @@
                                     </h3>
                                     <div class="flex flex-wrap justify-center gap-12">
                                         @foreach ($role->speakers as $speaker)
-                                            <div
-                                                class="flex flex-col items-center text-center max-w-xs p-6 transition duration-300 ease-in-out transform">
-                                                <img class="h-40 w-40 object-cover mx-auto border-4 border-gray-200 shadow-sm rounded-full"
+                                            <div class="flex flex-col items-center text-center max-w-xs p-6">
+                                                <img
+                                                    class="h-40 w-40 object-cover mx-auto border-4 border-gray-200 shadow-sm rounded-full"
                                                     src="{{ $speaker->getFilamentAvatarUrl() }}"
-                                                    alt="{{ $speaker->fullName }}" />
-                                                <div class="mt-6">
-                                                    <h4 class="text-2xl font-bold text-gray-900">
+                                                    alt="{{ $speaker->fullName }}"
+                                                />
+                                                <div class="mt-6 w-full">
+                                                    <h4 class="text-2xl font-bold text-gray-900 truncate">
                                                         {{ $speaker->fullName }}</h4>
+
                                                     @if ($speaker->getMeta('affiliation'))
-                                                        <p class="text-lg text-gray-600 mt-2">
+                                                        <p class="text-lg text-gray-600 mt-2 truncate">
                                                             {{ $speaker->getMeta('affiliation') }}</p>
                                                     @endif
+                                                    @if($speaker->getMeta('scopus_url') || $speaker->getMeta('google_scholar_url') || $speaker->getMeta('orcid_url'))
+                                                        <div class="cf-committee-scholar flex justify-center items-center gap-3 mt-3">
+                                                            @if($speaker->getMeta('orcid_url'))
+                                                                <a href="{{ $speaker->getMeta('orcid_url') }}" target="_blank">
+                                                                    <x-academicon-orcid class="w-6 h-6 text-[#A6CE39]" />
+                                                                </a>
+                                                            @endif
+                                                            @if($speaker->getMeta('google_scholar_url'))
+                                                                <a href="{{ $speaker->getMeta('google_scholar_url') }}" target="_blank">
+                                                                    <x-academicon-google-scholar class="w-6 h-6 text-[#4285F4]" />
+                                                                </a>
+                                                            @endif
+                                                            @if($speaker->getMeta('scopus_url'))
+                                                                <a href="{{ $speaker->getMeta('scopus_url') }}" target="_blank">
+                                                                    <x-academicon-scopus class="w-6 h-6 text-[#0F4C75]" />
+                                                                </a>
+                                                            @endif
+                                                        </div>
+                                                    @endif
+                                                    @if ($speaker->getMeta('bio'))
+                                                        <p class="text-gray-600 text-base line-clamp-3 mt-4">
+                                                            {{ $speaker->getMeta('bio') }}</p>
+                                                    @endif
                                                 </div>
-                                                @if ($speaker->getMeta('bio'))
-                                                    <p class="text-gray-600 text-base line-clamp-3 mt-4">
-                                                        {{ $speaker->getMeta('bio') }}</p>
-                                                @endif
                                             </div>
                                         @endforeach
                                     </div>
@@ -94,7 +115,7 @@
                                         @continue
                                     @endif
                                     <div class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
-                                        <img 
+                                        <img
                                             style="
                                                 image-rendering: auto;
                                                 width: auto;
@@ -102,7 +123,7 @@
                                                 object-fit: contain;
                                                 max-width: 200px;
                                             "
-                                            src="{{ $sponsor->getFirstMediaUrl('logo') }}" 
+                                            src="{{ $sponsor->getFirstMediaUrl('logo') }}"
                                             alt="{{ $sponsor->name }}"
                                             loading="lazy"
                                         />
@@ -124,7 +145,7 @@
                                                 @continue
                                             @endif
                                             <div class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
-                                                <img 
+                                                <img
                                                     style="
                                                         image-rendering: auto;
                                                         width: auto;
@@ -132,7 +153,7 @@
                                                         object-fit: contain;
                                                         max-width: 200px;
                                                     "
-                                                    src="{{ $sponsor->getFirstMediaUrl('logo') }}" 
+                                                    src="{{ $sponsor->getFirstMediaUrl('logo') }}"
                                                     alt="{{ $sponsor->name }}"
                                                     loading="lazy"
                                                 />
@@ -155,7 +176,7 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our Partners</h2>
                 </div>
-    
+
                 <!-- Partners Grid -->
                 <div class="flex flex-col items-center justify-center w-full">
                     <div class="flex flex-wrap items-center justify-center gap-6 w-full">
@@ -165,7 +186,7 @@
                             @endif
                             <div class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
                                 <!-- Partner Logo -->
-                                <img 
+                                <img
                                     style="
                                         image-rendering: auto;
                                         width: auto;
@@ -173,7 +194,7 @@
                                         object-fit: contain;
                                         max-width: 200px;
                                     "
-                                    src="{{ $partner->getFirstMediaUrl('logo') }}" 
+                                    src="{{ $partner->getFirstMediaUrl('logo') }}"
                                     alt="{{ $partner->name }}"
                                     loading="lazy"
                                 />
@@ -184,7 +205,7 @@
             </div>
         </section>
         @endif
-    
+
         @if ($currentScheduledConference)
             <section class="section-background py-24">
                 <div class="container mx-auto px-4 max-w-7xl">
@@ -212,8 +233,8 @@
                                     <div class="relative h-64 rounded-t-3xl overflow-hidden">
                                         <div class="absolute inset-0 bg-gradient-to-b from-black/10 to-black/30 z-10">
                                         </div>
-                                        
-                                        
+
+
                                         @if($imageUrl)
                                             <img src="{{ $imageUrl }}" alt="{{ $announcement->title }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" loading="lazy">
                                         @else
