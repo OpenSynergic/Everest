@@ -4,6 +4,7 @@
 @endphp
 
 <!-- Top Navigation Bar -->
+@if(App\Facades\Plugin::getPlugin('Everest')->getSetting('top_navigation'))
 <div class="navbar-publisher bg-gradient-to-r text-black  top-0 w-full font-semibold z-[60]">
     <div class="container mx-auto px-4 lg:px-8 h-16 flex items-center justify-between">
         <!-- Logo Section -->
@@ -28,7 +29,7 @@
         </div>
     </div>
 </div>
-
+@endif
 
 @if(app()->getCurrentConference() || app()->getCurrentScheduledConference())
     <div id="navbar" class="sticky-navbar top-0 shadow z-50 w-full text-white transition-all duration-300">
@@ -52,6 +53,12 @@
                         class="flex items-center gap-x-6 text-white hover:text-gray-200 transition-colors duration-200"
                     />
 
+                    @if(!App\Facades\Plugin::getPlugin('Everest')->getSetting('top_navigation'))
+                    <x-everest::navigation-menu
+                    :items="$userNavigationMenu"
+                    class="flex items-center gap-x-6 text-white hover:text-gray-200 transition-colors duration-200"
+                    />
+                    @endif
                 </div>
             </div>
         </div>
