@@ -5,8 +5,8 @@
 ])
 
 @if ($headerLogo)
-    <x-everest::link 
-        {{ $attributes->merge(['class' => 'inline-flex items-center']) }} 
+    <x-everest::link
+        {{ $attributes->merge(['class' => 'inline-flex items-center']) }}
         :href="$homeUrl"
     >
         <div class="relative h-12 min-w-[100px] max-w-[200px]"> {{-- Sesuaikan ukuran --}}
@@ -22,13 +22,12 @@
         :href="$homeUrl"
         {{ $attributes->merge([
             'class' => '
-                text-lg 
-                sm:text-xl 
-                font-semibold 
-                hover:opacity-80 
-                transition-opacity 
+                text-lg
+                sm:text-xl
+                font-semibold
+                hover:opacity-80
+                transition-opacity
                 duration-200
-                text-white
             '
         ]) }}
     >

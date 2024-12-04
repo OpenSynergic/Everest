@@ -24,21 +24,21 @@ class EverestTheme extends Theme
 	{
 		Blade::anonymousComponentPath($this->getPluginPath('resources/views/frontend/website/components'), 'everest');
 	}
-	
-	public function getFormSchema() : array 
+
+	public function getFormSchema() : array
 	{
 		return [
-			SpatieMediaLibraryFileUpload::make('images') 
+			SpatieMediaLibraryFileUpload::make('images')
 				->collection('everest-header')
 				->label('Upload Header Images')
-				->multiple() 
+				->multiple()
 				->maxFiles(4)
 				->image()
 				->conversion('thumb-xl'),
 			ColorPicker::make('appearance_color')
 				->regex('/^#?(([a-f0-9]{3}){1,2})$/i')
 				->label(__('general.appearance_color')),
-			
+
 			// Layouts
 			Builder::make('layouts')
 				->blocks([
@@ -51,9 +51,9 @@ class EverestTheme extends Theme
 								->label('About Site')
 								->profile('advanced')
 								->required(),
-							
+
 						]),
-					
+
 				])
 			->reorderableWithButtons()
 			->collapsed()
@@ -62,9 +62,10 @@ class EverestTheme extends Theme
 	}
 
 	public function onActivate(): void
-	{	
+	{
 		Hook::add('Frontend::Views::Head', function ($hookName, &$output){
 			$output .= '<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>';
+			$output .= '<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />';
 			$css = $this->url('everest.css');
 			$output .= "<link rel='stylesheet' type='text/css' href='$css'/> ";
 
@@ -72,7 +73,7 @@ class EverestTheme extends Theme
 				$oklch = ColorFactory::new($appearanceColor)->to(ColorSpace::OkLch);
 				$css = new CSSGenerator();
 				$css->root_variable('p', "{$oklch->lightness}% {$oklch->chroma} {$oklch->hue}");
-	
+
 				$output .= <<<HTML
 					<style>
 						{$css->get_output()}
@@ -84,7 +85,7 @@ class EverestTheme extends Theme
 
 	}
 
-	public function getFormData() : array 
+	public function getFormData() : array
 	{
 		return [
 			'images' => $this->getSetting('images'),
