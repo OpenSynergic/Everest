@@ -33,7 +33,7 @@
 
 @if(app()->getCurrentConference() || app()->getCurrentScheduledConference())
     <div id="navbar" class="sticky-navbar top-0 shadow z-50 w-full text-white transition-all duration-300">
-        <div class="navbar-everest navbar container mx-auto px-4 lg:px-8 h-16">
+        <div class="navbar-everest navbar-custom-everest container mx-auto px-4 lg:px-8 h-16">
             <div class="flex items-center justify-between h-full">
                 <!-- Mobile Menu & Logo -->
                 <div class="flex items-center gap-x-4">
