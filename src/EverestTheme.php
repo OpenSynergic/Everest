@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Blade;
 use Filament\Forms\Components\Builder;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\Toggle;
 
 class EverestTheme extends Theme
 {
@@ -28,6 +29,12 @@ class EverestTheme extends Theme
 	public function getFormSchema() : array
 	{
 		return [
+            Toggle::make('top_navigation')
+                ->label('Top Navigation')
+                ->inline(false)
+                ->default(false)
+                ->onColor('success')
+                ->offColor('danger'),
 			SpatieMediaLibraryFileUpload::make('images')
 				->collection('everest-header')
 				->label('Upload Header Images')
@@ -93,6 +100,7 @@ class EverestTheme extends Theme
 			'layouts' => $this->getSetting('layouts'),
 			'name_content' => $this->getSetting('name_content'),
 			'about' => $this->getSetting('about'),
+			'top_navigation' => $this->getSetting('top_navigation'),
 		];
 	}
 }
