@@ -216,11 +216,23 @@
                         </h2>
                     </div>
 
-                    @if ($currentScheduledConference->announcements()->where('expires_at', '>', now()->startOfDay())->count() > 0)
+                    @if ($currentScheduledConference->announcements()
+                    ->where(function ($query) {
+                        $query->where('expires_at', '>', now()->startOfDay())
+                              ->orWhereNull('expires_at');
+                    })->count() > 0)
 
                         <!-- Announcements Grid -->
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            @foreach ($currentScheduledConference->announcements()->where('expires_at', '>', now()->startOfDay())->orderBy('created_at', 'DESC')->take(3)->get() as $announcement)
+                            @foreach ($currentScheduledConference->announcements()
+                            ->where(function ($query) {
+                                $query->where('expires_at', '>', now()->startOfDay())
+                                    ->orWhereNull('expires_at');
+                            })
+                            ->orderBy('created_at', 'DESC')
+                            ->take(3)
+                            ->get() as $announcement)
+                            
                                 @php
                                     $content = $announcement->getMeta('content');
                                     preg_match('/<img[^>]+src="([^">]+)"/', $content, $matches);
