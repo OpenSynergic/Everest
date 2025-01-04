@@ -3,7 +3,7 @@
         <div class="mb-6">
             <x-everest::breadcrumbs :breadcrumbs="$this->getBreadcrumbs()" class="text-sm text-gray-600" />
         </div>
-        
+
         <div class="bg-white rounded-lg shadow-sm p-6">
             <div class="flex items-center mb-6">
                 <h1 class="text-xl font-semibold text-gray-900 min-w-fit pr-4">{{ $this->getTitle() }}</h1>
@@ -41,6 +41,17 @@
                                 @enderror
                             </div>
 
+                            <div class="sm:col-span-6">
+                                <label class="block text-sm font-medium text-gray-700 mb-1">
+                                    {{ __('general.public_name') }}</span>
+                                </label>
+                                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-1 focus:ring-primary-200 focus:border-primary-400" wire:model="public_name" />
+                                @error('public_name')
+                                <div class="mt-1 text-sm text-red-600">{{ $message }}</div>
+                                @enderror
+                                <p class="text-xs text-gray-500">{{ __('general.public_name_helper') }}</p>
+                            </div>
+
                             <div class="sm:col-span-3">
                                 <label class="block text-sm font-medium text-gray-700 mb-1">
                                     {{ __('general.affiliation') }}
@@ -65,7 +76,7 @@
                                     <div class="mt-1 text-sm text-red-600">{{ $message }}</div>
                                 @enderror
                             </div>
-                            
+
                             <div class="sm:col-span-6">
                                 <label class="block text-sm font-medium text-gray-700 mb-1">
                                     {{ __('general.phone') }}</span>
