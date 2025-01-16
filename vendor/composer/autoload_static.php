@@ -22,7 +22,6 @@ class ComposerStaticInit754b6c7e9e72693d06969acd218e8ad7
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Everest\\EverestTheme' => __DIR__ . '/../..' . '/src/EverestTheme.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
