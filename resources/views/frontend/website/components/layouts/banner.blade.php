@@ -49,7 +49,7 @@
             </div>
 
             <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
-                <h1 class="font-bold text-2xl lg:text-6xl  xl:text-7xl tracking-tight mb-8 drop-shadow-lg">{{ $currentScheduledConference->title }}</h1>
+                <h1 class="font-bold text-2xl lg:text-6xl tracking-tight mb-8 drop-shadow-lg">{{ $currentScheduledConference->title }}</h1>
                 <div class="flex flex-col space-y-4 mb-8">
                     @if($currentScheduledConference->date_start || $currentScheduledConference->date_end)
                         <div class="flex items-center">
