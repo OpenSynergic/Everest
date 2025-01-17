@@ -15,6 +15,9 @@ use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Forms\Components\TextInput;
 use Illuminate\Support\Facades\Blade;
 use Filament\Forms\Components\Builder;
+use Filament\Forms\Components\Checkbox;
+use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\Toggle;
@@ -26,15 +29,12 @@ class EverestTheme extends Theme
 		Blade::anonymousComponentPath($this->getPluginPath('resources/views/frontend/website/components'), 'everest');
 	}
 
-	public function getFormSchema() : array
+	public function getFormSchema(): array
 	{
 		return [
-            Toggle::make('top_navigation')
-                ->label('Top Navigation')
-                ->inline(false)
-                ->default(false)
-                ->onColor('success')
-                ->offColor('danger'),
+			Toggle::make('top_navigation')
+				->label('Enable Top Navigation')
+				->default(false),
 			SpatieMediaLibraryFileUpload::make('images')
 				->collection('everest-header')
 				->label('Upload Header Images')
@@ -62,15 +62,26 @@ class EverestTheme extends Theme
 						]),
 
 				])
-			->reorderableWithButtons()
-			->collapsed()
-			->reorderableWithDragAndDrop(false),
+				->reorderableWithButtons()
+				->collapsed()
+				->reorderableWithDragAndDrop(false),
+
+			Repeater::make('banner_buttons')	
+				->schema([
+					TextInput::make('text')->required(),
+					TextInput::make('url')
+						->required()
+						->url(),
+					ColorPicker::make('text_color'),
+					ColorPicker::make('background_color'),
+				])
+				->columns(2),
 		];
 	}
 
 	public function onActivate(): void
 	{
-		Hook::add('Frontend::Views::Head', function ($hookName, &$output){
+		Hook::add('Frontend::Views::Head', function ($hookName, &$output) {
 			$output .= '<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>';
 			$output .= '<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />';
 			$css = $this->url('everest.css');
@@ -87,12 +98,10 @@ class EverestTheme extends Theme
 					</style>
 				HTML;
 			}
-
 		});
-
 	}
 
-	public function getFormData() : array
+	public function getFormData(): array
 	{
 		return [
 			'images' => $this->getSetting('images'),
@@ -101,6 +110,7 @@ class EverestTheme extends Theme
 			'name_content' => $this->getSetting('name_content'),
 			'about' => $this->getSetting('about'),
 			'top_navigation' => $this->getSetting('top_navigation'),
+			'banner_buttons' => $this->getSetting('banner_buttons'),
 		];
 	}
 }

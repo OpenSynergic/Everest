@@ -49,7 +49,7 @@
             </div>
 
             <div class="w-full lg:w-1/2 mb-10 lg:mb-0">
-                <h1 class="font-bold text-2xl lg:text-6xl  xl:text-7xl tracking-tight mb-8 drop-shadow-lg">{{ $currentScheduledConference->title }}</h1>
+                <h1 class="font-bold text-2xl lg:text-6xl tracking-tight mb-8 drop-shadow-lg">{{ $currentScheduledConference->title }}</h1>
                 <div class="flex flex-col space-y-4 mb-8">
                     @if($currentScheduledConference->date_start || $currentScheduledConference->date_end)
                         <div class="flex items-center">
@@ -85,15 +85,22 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="{{ route(App\Panel\ScheduledConference\Resources\SubmissionResource\Pages\ManageSubmissions::getRouteName(App\Providers\PanelProvider::PANEL_SCHEDULED_CONFERENCE)) }}" class="button-banner submit">
-                        Submit Now
-                    </a>
-                    <a href="{{ route(App\Frontend\ScheduledConference\Pages\ParticipantRegister::getRouteName('scheduledConference')) }}" class="button-banner register">
-                        Register Now
-                    </a>
+                @if($theme->getSetting('banner_buttons'))
+                <div class="flex flex-col flex-wrap sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    @foreach($theme->getSetting('banner_buttons') ?? [] as $button)
+                        <a 
+                            @style([
+                                'background-color: ' . data_get($button, 'background_color') => data_get($button, 'background_color'),
+                                'color: ' . data_get($button, 'text_color') => data_get($button, 'text_color'), 
+                            ])
+                            href="{{ data_get($button, 'url') }}" 
+                            class="button-banner"
+                            >
+                            {{ data_get($button, 'text') }}
+                        </a>
+                    @endforeach
                 </div>
+                @endif
             </div>
         </div>
     </div>
