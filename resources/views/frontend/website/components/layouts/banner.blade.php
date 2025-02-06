@@ -86,7 +86,7 @@
                     </div>
                 </div>
                 @if($theme->getSetting('banner_buttons'))
-                <div class="flex flex-col flex-wrap sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="flex flex-col flex-wrap sm:flex-row gap-4">
                     @foreach($theme->getSetting('banner_buttons') ?? [] as $button)
                         <a 
                             @style([
