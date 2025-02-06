@@ -4,7 +4,7 @@
 
     <div class="space-y-8">
 
-        <section class="container mx-auto px-4 py-8">
+        <section class="">
             <div class="flex flex-col lg:flex-row gap-8 items-start">
                 @if ($currentScheduledConference->hasMedia('cover'))
                     <div class="cf-cover">
@@ -18,10 +18,10 @@
                     $layouts = App\Facades\Plugin::getPlugin('Everest')->getSetting('layouts');
                 @endphp
 
-                <div class="prose max-w-none">
+                <div class="prose prose-li: max-w-none w-full">
                     @if ($layouts)
                         @foreach ($layouts as $layout)
-                            <div class="prose max-w-none layout-section">
+                            <div class="layout-section">
                                 {{ new Illuminate\Support\HtmlString($layout['data']['about']) }}
                             </div>
                         @endforeach
