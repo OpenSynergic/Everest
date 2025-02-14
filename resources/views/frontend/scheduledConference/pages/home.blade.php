@@ -55,11 +55,11 @@
                                                     alt="{{ $speaker->fullName }}"
                                                 />
                                                 <div class="mt-6 w-full">
-                                                    <h4 class="text-2xl font-bold text-gray-900 truncate">
+                                                    <h4 class="text-2xl font-bold text-gray-900">
                                                         {{ $speaker->fullName }}</h4>
 
                                                     @if ($speaker->getMeta('affiliation'))
-                                                        <p class="text-lg text-gray-600 mt-2 truncate">
+                                                        <p class="text-lg text-gray-600 mt-2">
                                                             {{ $speaker->getMeta('affiliation') }}</p>
                                                     @endif
                                                     @if($speaker->getMeta('scopus_url') || $speaker->getMeta('google_scholar_url') || $speaker->getMeta('orcid_url'))
