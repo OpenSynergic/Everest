@@ -207,7 +207,7 @@
         @endif
 
         @if ($currentScheduledConference)
-            <section class="section-background py-24">
+            <section class="latest-news section-background py-24">
                 <div class="container mx-auto px-4 max-w-7xl">
                     <!-- Section Header -->
                     <div class="text-center max-w-3xl mx-auto mb-16">
