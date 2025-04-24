@@ -26,6 +26,10 @@ class EverestTheme extends Theme
 {
 	public function boot()
 	{
+		if (app()->getCurrentScheduledConference()?->getMeta('theme') == 'Everest') {
+            Blade::anonymousComponentPath($this->getPluginPath('resources/views/frontend/website/components'), prefix: 'website');
+            Blade::anonymousComponentPath($this->getPluginPath('resources/views/frontend/scheduledConference/components'), prefix: 'scheduledConference');
+        }
 		Blade::anonymousComponentPath($this->getPluginPath('resources/views/frontend/website/components'), 'everest');
 	}
 
@@ -48,8 +52,31 @@ class EverestTheme extends Theme
 
 			// Layouts
 			Builder::make('layouts')
+				->collapsible()
+				->collapsed()
+				->cloneable()
+				->blockNumbers(false)
+				->reorderableWithButtons()
+				->reorderableWithDragAndDrop(false)
 				->blocks([
+					Builder\Block::make('speakers')
+						->label('Speakers')
+						->icon('heroicon-o-users')
+						->maxItems(1),
+					Builder\Block::make('sponsors')
+						->label('Sponsors')
+						->icon('heroicon-o-building-office-2')
+						->maxItems(1),
+					Builder\Block::make('partners')
+						->label('Partners')
+						->icon('heroicon-o-building-office')
+						->maxItems(1),
+					Builder\Block::make('latest-news')
+						->label('Latest News')
+						->icon('heroicon-o-newspaper')
+						->maxItems(1),
 					Builder\Block::make('layouts')
+						->label('Custom Content')
 						->schema([
 							TextInput::make('name_content')
 								->label('Name')
@@ -58,7 +85,6 @@ class EverestTheme extends Theme
 								->label('About Site')
 								->profile('advanced')
 								->required(),
-
 						]),
 
 				])
@@ -66,7 +92,7 @@ class EverestTheme extends Theme
 				->collapsed()
 				->reorderableWithDragAndDrop(false),
 
-			Repeater::make('banner_buttons')	
+			Repeater::make('banner_buttons')
 				->schema([
 					TextInput::make('text')->required(),
 					TextInput::make('url')
@@ -91,6 +117,9 @@ class EverestTheme extends Theme
 				$oklch = ColorFactory::new($appearanceColor)->to(ColorSpace::OkLch);
 				$css = new CSSGenerator();
 				$css->root_variable('p', "{$oklch->lightness}% {$oklch->chroma} {$oklch->hue}");
+
+				$oklch = ColorFactory::new('#1F2937')->to(ColorSpace::OkLch);
+				$css->root_variable('bc', "{$oklch->lightness}% {$oklch->chroma} {$oklch->hue}");
 
 				$output .= <<<HTML
 					<style>

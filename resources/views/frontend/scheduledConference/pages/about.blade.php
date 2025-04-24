@@ -17,19 +17,10 @@
                 </h1>
             </div>
 
-            @php
-
-            $layouts = App\Facades\Plugin::getPlugin('Everest')->getSetting('layouts');
-            
-            @endphp
-
-            <!-- Content Section -->
-            @if ($layouts)
-                @foreach($layouts as $layout)
-                    <div class="prose max-w-none layout-section">
-                        {{ new Illuminate\Support\HtmlString($layout['data']['about']) }}
-                    </div>
-                @endforeach
+            @if ($about)
+                <div class="prose max-w-none layout-section">
+                    {{ new Illuminate\Support\HtmlString($about) }}
+                </div>
             @else
                 <div class="bg-gray-100 rounded-lg p-6 text-center">
                     <p class="text-lg text-gray-500">
