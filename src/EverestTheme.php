@@ -77,20 +77,18 @@ class EverestTheme extends Theme
 						->maxItems(1),
 					Builder\Block::make('layouts')
 						->label('Custom Content')
+						->icon('heroicon-m-bars-3-bottom-left')
 						->schema([
 							TextInput::make('name_content')
-								->label('Name')
+								->label('Title')
 								->required(),
 							TinyEditor::make('about')
-								->label('About Site')
+								->label('Content')
 								->profile('advanced')
 								->required(),
 						]),
 
-				])
-				->reorderableWithButtons()
-				->collapsed()
-				->reorderableWithDragAndDrop(false),
+				]),
 
 			Repeater::make('banner_buttons')
 				->schema([
@@ -135,7 +133,7 @@ class EverestTheme extends Theme
 		return [
 			'images' => $this->getSetting('images'),
 			'appearance_color' => $this->getSetting('appearance_color'),
-			'layouts' => $this->getSetting('layouts'),
+			'layouts' => $this->getSetting('layouts') ?? [] ,
 			'name_content' => $this->getSetting('name_content'),
 			'about' => $this->getSetting('about'),
 			'top_navigation' => $this->getSetting('top_navigation'),
