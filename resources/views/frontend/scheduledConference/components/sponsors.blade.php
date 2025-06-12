@@ -18,7 +18,14 @@
 						@if (!$sponsor->getFirstMedia('logo'))
 							@continue
 						@endif
-						<div class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
+
+						@php $tag = $sponsor->getMeta('url') ? 'a' : 'div'; @endphp
+
+						<{{$tag}} 
+							@if($sponsor->getMeta('url'))
+							href="{{ $sponsor->getMeta('url') }}"
+							@endif
+							class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
 							<img
 								style="
 									image-rendering: auto;
@@ -31,7 +38,7 @@
 								alt="{{ $sponsor->name }}"
 								loading="lazy"
 							/>
-						</div>
+						</{{$tag}}>
 					@endforeach
 				</div>
 			</div>
@@ -48,7 +55,14 @@
 								@if (!$sponsor->getFirstMedia('logo'))
 									@continue
 								@endif
-								<div class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
+								@php $tag = $sponsor->getMeta('url') ? 'a' : 'div'; @endphp
+
+
+								<{{$tag}} 
+									@if($sponsor->getMeta('url'))
+									href="{{ $sponsor->getMeta('url') }}"
+									@endif
+									class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
 									<img
 										style="
 											image-rendering: auto;
@@ -61,7 +75,7 @@
 										alt="{{ $sponsor->name }}"
 										loading="lazy"
 									/>
-								</div>
+								</{{$tag}}>
 							@endforeach
 						</div>
 					</div>
