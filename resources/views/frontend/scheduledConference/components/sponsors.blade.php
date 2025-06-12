@@ -61,6 +61,7 @@
 								<{{$tag}} 
 									@if($sponsor->getMeta('url'))
 									href="{{ $sponsor->getMeta('url') }}"
+									target="_blank"
 									@endif
 									class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
 									<img

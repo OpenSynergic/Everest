@@ -20,6 +20,7 @@
 						<{{$tag}} 
 							@if($partner->getMeta('url'))
 							href="{{ $partner->getMeta('url') }}"
+							target="_blank"
 							@endif
 						 	class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
 							<!-- Partner Logo -->
