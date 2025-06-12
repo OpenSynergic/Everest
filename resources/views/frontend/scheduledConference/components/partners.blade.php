@@ -15,7 +15,13 @@
 						@if (!$partner->getFirstMedia('logo'))
 							@continue
 						@endif
-						<div class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
+						@php $tag = $partner->getMeta('url') ? 'a' : 'div'; @endphp
+
+						<{{$tag}} 
+							@if($partner->getMeta('url'))
+							href="{{ $partner->getMeta('url') }}"
+							@endif
+						 	class="flex items-center justify-center p-3 transition duration-300 ease-in-out">
 							<!-- Partner Logo -->
 							<img
 								style="
@@ -29,7 +35,7 @@
 								alt="{{ $partner->name }}"
 								loading="lazy"
 							/>
-						</div>
+						</{{$tag}}>
 					@endforeach
 				</div>
 			</div>
