@@ -9,7 +9,7 @@
                 <hr class="w-full h-px my-auto bg-gray-200 border-0 dark:bg-gray-700">
             </div>
             @if ($content)
-                <div class="prose">
+                <div class="prose max-w-none">
                     {{ new Illuminate\Support\HtmlString($content) }}
                 </div>
             @else
