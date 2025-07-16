@@ -1,5 +1,5 @@
 <x-everest::layouts.main>
-    <div class="mx-auto "> 
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"> 
         <!-- Breadcrumbs Section -->
         <div class="px-4 sm:px-6 lg:px-8 mb-6">
             <x-everest::breadcrumbs 
@@ -18,7 +18,7 @@
             </div>
 
             @if ($about)
-                <div class="prose max-w-none layout-section">
+                <div class="prose max-w-none layout-section" style="--tw-prose-body:#000000">
                     {{ new Illuminate\Support\HtmlString($about) }}
                 </div>
             @else
