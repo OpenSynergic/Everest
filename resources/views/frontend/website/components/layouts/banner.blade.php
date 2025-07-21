@@ -1,6 +1,6 @@
 <section class="hero-banner bg-gradient-to-r relative bg-[#FAFAFA] text-black py-20 lg:py-32 -mt-16">
     <div class="container mx-auto px-4">
-        <div class="flex flex-col lg:flex-row-reverse items-center justify-between">
+        <div class="flex flex-col gap-4 lg:flex-row-reverse items-center justify-between">
             <!-- Bagian gambar -->
             <div class="w-full lg:w-1/2 flex justify-items-end ">
                 @php
