@@ -59,14 +59,14 @@
                                 </svg>
                             </span>
                             <div>
-                                <span class="font-semibold text-black">
-                                    @if($currentScheduledConference->date_start)
-                                        {{ $currentScheduledConference->date_start->format(Setting::get('format_date')) }}
+                                @if($currentScheduledConference->date_start)
+                                    @if($currentScheduledConference->date_end && $currentScheduledConference->date_start->format(Setting::get('format_date')) !== $currentScheduledConference->date_end->format(Setting::get('format_date')))
+                                        <span class="font-semibold text-black">{{ $currentScheduledConference->date_start->format(Setting::get('format_date')) }}</span>
+                                        <span class="font-semibold text-black"> - {{ $currentScheduledConference->date_end->format(Setting::get('format_date')) }}</span>
+                                    @else
+                                        <span class="font-semibold text-black">{{ $currentScheduledConference->date_start->format(Setting::get('format_date')) }}</span>
                                     @endif
-                                    @if($currentScheduledConference->date_end)
-                                        - {{ $currentScheduledConference->date_end->format(Setting::get('format_date')) }}
-                                    @endif
-                                </span>
+                                @endif
                                 <span class="ml-2 text-sm text-gray-600">Conference Dates</span>
                             </div>
                         </div>
